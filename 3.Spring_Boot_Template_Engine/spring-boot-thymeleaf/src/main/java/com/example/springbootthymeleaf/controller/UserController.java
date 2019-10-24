@@ -12,7 +12,7 @@ public class UserController {
     public String demo(Model model){
         model.addAttribute("message","Hello Thymeleaf");
 
-        return "demo";
+        return "demo.html";
     }
 
 
