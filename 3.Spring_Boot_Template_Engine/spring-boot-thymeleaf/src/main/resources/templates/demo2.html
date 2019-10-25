@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaft Demo</title>
+</head>
+<body>
+
+<h3>Thymeleaf loop</h3>
+<table>
+    <tr>
+        <th>Student ID</th>
+        <th>Student Name</th>
+        <th>Student Age</th>
+    </tr>
+    <tr th:each = "user : ${list}">
+        <td th:text ="${user.id}"></td>
+        <td th:text = "${user.name}"></td>
+        <td th:text = "${user.age}"></td>
+    </tr>
+
+</table>
+
+<h3>Thymeleaf Scope</h3>
+Request: <span th:text="${#httpServletRequest.getAttribute('request')}"></span><br />
+Session: <span th:text="${session.session}"></span><br />
+Application: <span th:text="${application.application}"></span><br />
+
+
+<h3>Thymeleaf URLs</h3>
+
+<a th:href="@{~/demo}">Visit Demo Page</a> <br />
+
+<a th:href="@{~/demo(id=1, name=erric)}">Visit Demo Page with Parameters</a>
+</body>
+</html >
