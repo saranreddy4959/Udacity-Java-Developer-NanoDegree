@@ -1,13 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="556c5a34-efb1-493c-a4ba-528261120ed3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_json_json_20180130.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/.mvn/wrapper/MavenWrapperDownloader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/SpringBootHelloworldApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/controller/HelloController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/servlet/HelloFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/servlet/HelloListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/src/main/java/com/example/springboothelloworld/servlet/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/src/main/resources/static/image/react-classroom.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/src/main/resources/static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../2.Introduction_to_Spring_Boot_Framework/spring-boot-helloworld/src/test/java/com/example/springboothelloworld/SpringBootHelloworldApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatroom-starter.iml" beforeDir="false" afterPath="$PROJECT_DIR$/chatroom-starter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/WebSocketChatApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/WebSocketChatApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/chat/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/chat/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/chat/WebSocketChatServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/udacity/java/nano/chat/WebSocketChatServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/WebSocketChatApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/WebSocketChatApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/chat/Message.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/chat/Message.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/chat/WebSocketChatServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/chat/WebSocketChatServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/chat/WebSocketConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/edu/udacity/java/nano/chat/WebSocketConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/chat.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/chat.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1SnmkdfQi22wApw0j9owMPC3JjZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="WebSocketChatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -17,5 +88,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="556c5a34-efb1-493c-a4ba-528261120ed3" name="Default Changelist" comment="" />
+      <created>1572207878039</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572207878039</updated>
+      <workItem from="1572207884554" duration="22906000" />
+    </task>
+    <task id="LOCAL-00001" summary="Project Chat Room">
+      <created>1572207997066</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1572207997067</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project Chat Room" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project Chat Room" />
   </component>
 </project>

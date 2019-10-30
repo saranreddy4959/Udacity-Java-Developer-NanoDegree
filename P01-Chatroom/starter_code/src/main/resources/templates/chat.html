@@ -38,6 +38,9 @@
                     <div class="mdui-container" style="padding:20px 35px">
                         <!-- TODO: add a send button to send message -->
                         <button class="mdui-btn mdui-color-theme mdui-ripple"
+                                onclick="sendMsgToServer()">Send Message
+                        </button>
+                        <button class="mdui-btn mdui-color-theme mdui-ripple"
                                 onclick="clearMsg()">Clear
                         </button>
                     </div>
@@ -56,8 +59,11 @@
                         <i class="mdui-icon material-icons">face</i></span>
                     <span class="mdui-chip-title">Online Users</span>
                     <!-- TODO: check online number num -->
+                    <span class="chat-num"></span>
                 </div>
                 <!-- TODO: add a message container -->
+                <div class ="message-container"></div>
+
             </div>
 
         </div>
@@ -76,7 +82,7 @@
         /**
          * WebSocket client PS：URL shows WebSocket protocal, port number, and then end point.
          */
-        var webSocket = new WebSocket(/*[[${webSocketUrl}]]*/ 'ws://localhost:8080/chat');
+        var webSocket = new WebSocket('ws://localhost:8080/chat/'+ $("#username").text());
         /**
          * websocket open connection.
          */
@@ -92,14 +98,14 @@
             //Receive Message from Server
             var message = JSON.parse(event.data) || {};
             var $messageContainer = $('.message-container');
-            if (message.type === 'SPEAK') {
+            if (message.type === 'SPEAK' || message.type === "ENTER" || message.type === "LEAVE") {
                 $messageContainer.append(
                     '<div class="mdui-card" style="margin: 10px 0;">' +
                     '<div class="mdui-card-primary">' +
-                    '<div class="mdui-card-content message-content">' + message.username + "：" + message.msg + '</div>' +
+                    '<div class="mdui-card-content message-content">' + message.username + "：" + message.message + '</div>' +
                     '</div></div>');
             }
-            $('.chat-num').text(message.onlineCount);
+            $('.chat-num').text(message.count);
             var $cards = $messageContainer.children('.mdui-card:visible').toArray();
             if ($cards.length > 5) {
                 $cards.forEach(function (item, index) {
