@@ -21,9 +21,9 @@ public class WebSocketChatApplication {
     /**
      * Login Page
      */
-    @GetMapping("/")
+    @GetMapping(value = {"/", "", "/login"})
     public ModelAndView login() {
-        return new ModelAndView("/login");
+        return new ModelAndView("login");
     }
 
     /**
