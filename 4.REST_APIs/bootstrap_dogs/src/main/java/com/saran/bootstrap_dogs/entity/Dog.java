@@ -1,32 +1,39 @@
 package com.saran.bootstrap_dogs.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
+
+import javax.persistence.*;
 
 @Entity
 public class Dog {
-
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     private String name;
-    private String Breed;
-    private String Origin;
+    private String breed;
+    private String origin;
 
-    public Dog(Long id,String name, String Breed, String Origin){
+    public Dog(Long id, String name, String breed, String origin) {
         this.id = id;
         this.name = name;
-        this.Breed = Breed;
-        this.Origin = Origin;
+        this.breed = breed;
+        this.origin = origin;
     }
 
-    public Dog(){}
-    public Dog(String name , String Breed){
-        this.name = name ;
-        this.Breed = Breed;
+    public Dog(String name, String breed) {
+        this.name = name;
+        this.breed = breed;
+    }
+
+    public Dog() {}
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -38,26 +45,18 @@ public class Dog {
     }
 
     public String getBreed() {
-        return Breed;
+        return breed;
     }
 
     public void setBreed(String breed) {
-        Breed = breed;
+        this.breed = breed;
     }
 
     public String getOrigin() {
-        return Origin;
+        return origin;
     }
 
     public void setOrigin(String origin) {
-        Origin = origin;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+        this.origin = origin;
     }
 }
