@@ -26,6 +26,7 @@ public class DogControllerIntegrationTesting {
     @LocalServerPort
     private int port;
 
+
     private TestRestTemplate restTemplate = new TestRestTemplate("admin", "password");
 
     //@WithMockUser(username = "admin")
