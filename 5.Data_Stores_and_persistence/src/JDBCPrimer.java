@@ -17,9 +17,17 @@ public class JDBCPrimer {
                 System.out.println("Connected to: "+con.getMetaData().getDatabaseProductName());
 
                 try(Statement stmt = con.createStatement()){
-                    ResultSet rs = stmt.executeQuery("select * from animals");
+                    ResultSet rs = stmt.executeQuery("select id,name from animals");
 
                     System.out.println("Executed sql query");
+
+                    while(rs.next()){
+                        int id = rs.getInt("id");
+                        String name = rs.getString("name");
+
+                        System.out.println("ID: "+id);
+                        System.out.println("name: "+name);
+                    }
                 }
 
      }catch(SQLException ex){
