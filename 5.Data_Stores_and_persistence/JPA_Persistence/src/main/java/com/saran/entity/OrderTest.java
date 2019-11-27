@@ -5,6 +5,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.Arrays;
 
 public class OrderTest {
 
@@ -26,9 +27,24 @@ public class OrderTest {
         order.setCustomer_address("857 Spiros Ct, Dekalb , IL, 60115");
         order.setCreated_time(Timestamp.valueOf(LocalDateTime.now()));
 
+        OrderItem orderItem = new OrderItem();
+        orderItem.setItemName("Oil");
+        orderItem.setItemCount(3);
+        orderItem.setOrder(order);
+
+        OrderItem orderItem1 = new OrderItem();
+        orderItem1.setItemName("Soap");
+        orderItem1.setItemCount(2);
+        orderItem1.setOrder(order);
+
+        order.setOrder(Arrays.asList(orderItem,orderItem1));
+
         em.persist(order);
 
+
         System.err.println("Order ID:"+order.getOrderId());
+        System.err.println("Order ItemID 1:"+orderItem.getOrderItemId());
+        System.err.println("Order ItemId 2: "+orderItem1.getOrderItemId());
 
         em.getTransaction().commit();
         em.close();

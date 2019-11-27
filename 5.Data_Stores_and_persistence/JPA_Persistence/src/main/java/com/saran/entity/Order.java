@@ -3,6 +3,8 @@ package com.saran.entity;
 
 import javax.persistence.*;
 import java.sql.Timestamp;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "orders")
@@ -21,6 +23,10 @@ public class Order {
 
     @Column(name = "created_time")
     private Timestamp created_time;
+
+    @OneToMany(mappedBy = "order", cascade = CascadeType.PERSIST)
+    private List<OrderItem> order;
+
 
 
     public Integer getOrderId() {
@@ -53,5 +59,13 @@ public class Order {
 
     public void setCreated_time(Timestamp created_time) {
         this.created_time = created_time;
+    }
+
+    public List<OrderItem> getOrder() {
+        return order;
+    }
+
+    public void setOrder(List<OrderItem> order) {
+        this.order = order;
     }
 }
