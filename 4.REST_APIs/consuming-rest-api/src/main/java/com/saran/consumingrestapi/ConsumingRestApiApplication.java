@@ -19,7 +19,6 @@ public class ConsumingRestApiApplication {
 		SpringApplication.run(ConsumingRestApiApplication.class, args);
 	}
 
-
 	@Bean
 	public RestTemplate restTemplate(RestTemplateBuilder builder){
 		return builder.build();
@@ -27,6 +26,7 @@ public class ConsumingRestApiApplication {
 
 	@Bean
 	public CommandLineRunner run(RestTemplate restTemplate) throws Exception{
+		//RestTemplate restTemplate1 = this.restTemplate();
 		return args -> {
 			Joke joke = restTemplate.getForObject("https://official-joke-api.appspot.com/random_joke", Joke.class);
 			log.info(joke.toString());

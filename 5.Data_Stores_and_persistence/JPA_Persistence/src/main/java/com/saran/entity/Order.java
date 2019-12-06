@@ -16,10 +16,10 @@ public class Order {
     private Integer orderId;
 
     @Column(name = "customer_name")
-    private String customer_name;
+    private String customerName;
 
     @Column(name = "customer_address")
-    private String customer_address;
+    private String customerAddress;
 
     @Column(name = "created_time")
     private Timestamp created_time;
@@ -37,20 +37,20 @@ public class Order {
         this.orderId = orderId;
     }
 
-    public String getCustomer_name() {
-        return customer_name;
+    public String getCustomerName() {
+        return customerName;
     }
 
-    public void setCustomer_name(String customer_name) {
-        this.customer_name = customer_name;
+    public void setCustomerName(String customer_name) {
+        this.customerName = customer_name;
     }
 
-    public String getCustomer_address() {
-        return customer_address;
+    public String getCustomerAddress() {
+        return customerAddress;
     }
 
-    public void setCustomer_address(String customer_address) {
-        this.customer_address = customer_address;
+    public void setCustomerAddress(String customer_address) {
+        this.customerAddress = customer_address;
     }
 
     public Timestamp getCreated_time() {

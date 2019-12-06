@@ -23,8 +23,8 @@ public class OrderTest {
         em.getTransaction().begin();
 
         Order order = new Order();
-        order.setCustomer_name("Saran Padala");
-        order.setCustomer_address("857 Spiros Ct, Dekalb , IL, 60115");
+        order.setCustomerName("Saran Padala");
+        order.setCustomerAddress("857 Spiros Ct, Dekalb , IL, 60115");
         order.setCreated_time(Timestamp.valueOf(LocalDateTime.now()));
 
         OrderItem orderItem = new OrderItem();
