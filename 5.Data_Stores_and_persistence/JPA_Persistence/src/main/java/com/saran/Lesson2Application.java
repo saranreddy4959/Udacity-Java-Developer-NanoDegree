@@ -15,6 +15,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 import java.sql.Timestamp;
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Optional;
 
 @SpringBootApplication
@@ -30,8 +31,9 @@ public class Lesson2Application {
     @Bean
     public CommandLineRunner demo(OrderRepository repository){
         return (args) -> {
+
             Order order = new Order();
-            order.setCustomerName("Saran Padala");
+            order.setCustomerName("Saran");
             order.setCustomerAddress("857 Spiros Ct, Dekalb , IL, 60115");
             order.setCreated_time(Timestamp.valueOf(LocalDateTime.now()));
 
@@ -49,9 +51,11 @@ public class Lesson2Application {
 
             System.err.println("Order ID:"+ order.getOrderId());
 
-            Optional<Order> orderRead = repository.findByCustomerName("Saran Padala");
+            Optional<List<Order>> orderRead = repository.findByCustomerName("Saran");
 
-           orderRead.ifPresent(value -> System.err.println("Order: "+value));
+           //orderRead.ifPresent(value -> System.err.println("Order: "+value));
+
+
         };
     }
 

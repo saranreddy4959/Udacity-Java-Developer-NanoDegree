@@ -27,7 +27,7 @@ public class Order {
     @OneToMany(mappedBy = "order", cascade = CascadeType.PERSIST)
     private List<OrderItem> order;
 
-
+    public Order(){}
 
     public Integer getOrderId() {
         return orderId;
